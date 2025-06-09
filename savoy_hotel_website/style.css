@@ -766,23 +766,25 @@ h4 { font-size: 1.5rem; }
 /* Facilities Section */
 .facilities-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
 }
 
 .facility-card {
   background: var(--white);
-  padding: 2rem;
   border-radius: 10px;
-  text-align: center;
+  overflow: hidden;
   box-shadow: var(--shadow-md);
   transition: var(--transition);
+  text-align: center;
+  padding: 0;
 }
 
 .facility-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
 }
+
 
 .facility-card i {
   font-size: 2.5rem;
@@ -797,6 +799,27 @@ h4 { font-size: 1.5rem; }
 
 .facility-card p {
   color: var(--gray-600);
+}
+
+.facility-info {
+  padding: 1.5rem;
+  background: var(--white);
+  text-align: center;
+}
+
+.facility-info h3 {
+  margin-bottom: 0.5rem;
+  color: var(--gray-800);
+}
+
+.facility-info p {
+  color: var(--gray-600);
+}
+
+.facility-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 
 /* Events Section */
