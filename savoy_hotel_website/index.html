@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Experience luxury at Savoy Hotel Manila - The Philippines' Leading Airport Hotel. Located just 350m from NAIA Terminal 3 in Newport City, Pasay." />
+  <title>Savoy Hotel Manila | The Philippines' Leading Airport Hotel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="carousel_fix.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="images/savoy-logo.svg" alt="Savoy Hotel Manila Logo" class="logo-img">
+        <span class="logo-text">Savoy Hotel Manila</span>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#dining">Dining</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#whats-new">What's New</a></li>
+          <li><a href="#nearby">Nearby Places</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <a href="#hotel-flight" class="btn btn-outline">Hotel + Flight</a>
+          <a href="#booking" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+      <button class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-main-content">
+      <div class="hero-content">
+        <h1>YOUR VIBRANT EXPERIENCES AWAIT</h1>
+        <h2>WELCOME TO SAVOY HOTEL MANILA</h2>
+      </div>
+    </div>
+  </header>
+
+  <div class="booking-widget">
+    <form class="booking-form">
+      <div class="form-group-dates">
+        <div class="form-group check-in">
+          <label for="check-in-date"><i class="fas fa-calendar"></i> Check-in</label>
+          <input type="date" id="check-in-date" name="check-in" value="2025-06-09" required>
+        </div>
+        <div class="form-group check-out">
+          <label for="check-out-date"><i class="fas fa-calendar"></i> Check-out</label>
+          <input type="date" id="check-out-date" name="check-out" value="2025-06-10" required>
+        </div>
+      </div>
+      <div class="form-group-guests">
+        <div class="form-group adults">
+          <label><i class="fas fa-user"></i> Adult(s)</label>
+          <div class="guest-counter">
+            <button type="button" class="count-btn decrement">-</button>
+            <span class="count-display">2</span>
+            <button type="button" class="count-btn increment">+</button>
+          </div>
+        </div>
+        <div class="form-group kids">
+          <label><i class="fas fa-child"></i> Kid(s)</label>
+          <div class="guest-counter">
+            <button type="button" class="count-btn decrement">-</button>
+            <span class="count-display">0</span>
+            <button type="button" class="count-btn increment">+</button>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary check-availability-btn">CHECK AVAILABILITY</button>
+    </form>
+  </div>
+
+  <section id="about" class="section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="images/after_hero_image.webp" alt="Savoy Hotel Manila Room with City View">
+      </div>
+      <div class="about-text-and-carousel-wrapper">
+        <div class="about-content">
+          <p class="about-label">ABOUT US</p>
+          <h2>STAY AT THE PHILIPPINES' LEADING<br>AIRPORT HOTEL</h2>
+          <div class="colored-lines">
+            <div class="line red"></div>
+            <div class="line orange"></div>
+            <div class="line purple"></div>
+          </div>
+          <p class="about-description">Savoy Hotel Manila is located 350m away from NAIA Terminal 3. Relax in our cozy rooms, accomplish tasks in our Square Lounges, or savor delicious bites at our Savoy Cafe, Zabana and Poolside Bar. Each experience is a moment worth sharing at our Newport City hotel in Pasay City.</p>
+        </div>
+        <div class="about-features-carousel">
+          <div class="feature-card">
+            <i class="fas fa-utensils"></i>
+            <p>Restaurant</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-mug-saucer"></i>
+            <p>Coffee Shop</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-bell-concierge"></i>
+            <p>Room Service</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-swimming-pool"></i>
+            <p>Swimming Pool</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-wifi"></i>
+            <p>Wi-Fi Access</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-spa"></i>
+            <p>Spa</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-handshake"></i>
+            <p>Meeting Room</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-users"></i>
+            <p>Family Room</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-headset"></i>
+            <p>24 Hour Front Desk</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-shield-halved"></i>
+            <p>24 Hour Security</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-bell-concierge"></i>
+            <p>24 Hour Room Service</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-soap"></i>
+            <p>Laundry Service</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-right-to-bracket"></i>
+            <p>Express Check In</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-right-from-bracket"></i>
+            <p>Express Check Out</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-tv"></i>
+            <p>Android Smart TV</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-sauna"></i>
+            <p>Steam & Sauna</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rooms" class="section bg-light">
+    <div class="section-header">
+      <h2>Rooms & Suites</h2>
+      <p>Unwind at the End of the Day</p>
+    </div>
+    <div class="room-list">
+      <div class="room-card">
+        <div class="room-image">
+          <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80" alt="Executive Suite">
+          <div class="room-badge">Popular</div>
+        </div>
+        <div class="room-info">
+          <h3>Executive Suite</h3>
+          <ul class="room-features">
+            <li><i class="fas fa-bed"></i> King Size Bed</li>
+            <li><i class="fas fa-wifi"></i> Free High-Speed WiFi</li>
+            <li><i class="fas fa-tv"></i> 55" Smart TV</li>
+            <li><i class="fas fa-coffee"></i> Coffee Maker</li>
+            <li><i class="fas fa-bath"></i> Rain Shower</li>
+          </ul>
+          <div class="room-price">
+            <span class="price">From ₱8,500</span>
+            <span class="per-night">per night</span>
+          </div>
+          <a href="#booking" class="btn btn-outline">Book Now</a>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="room-image">
+          <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80" alt="Deluxe Room">
+          <div class="room-badge">Best Value</div>
+        </div>
+        <div class="room-info">
+          <h3>Deluxe Room</h3>
+          <ul class="room-features">
+            <li><i class="fas fa-bed"></i> Queen Size Bed</li>
+            <li><i class="fas fa-wifi"></i> Free High-Speed WiFi</li>
+            <li><i class="fas fa-tv"></i> 43" Smart TV</li>
+            <li><i class="fas fa-coffee"></i> Coffee Maker</li>
+            <li><i class="fas fa-bath"></i> Rain Shower</li>
+          </ul>
+          <div class="room-price">
+            <span class="price">From ₱6,500</span>
+            <span class="per-night">per night</span>
+          </div>
+          <a href="#booking" class="btn btn-outline">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dining" class="section">
+    <div class="section-header">
+      <h2>Dining</h2>
+      <p>Savor Cuisine in Diverse Settings</p>
+    </div>
+    <div class="dining-grid">
+      <div class="dining-card">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Savoy Cafe">
+        <div class="dining-info">
+          <h3>Savoy Cafe</h3>
+          <p>International cuisine in a casual setting</p>
+          <ul class="dining-features">
+            <li><i class="fas fa-clock"></i> 24/7 Dining</li>
+            <li><i class="fas fa-utensils"></i> All-day Dining</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dining-card">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Zabana">
+        <div class="dining-info">
+          <h3>Zabana</h3>
+          <p>Contemporary Filipino cuisine</p>
+          <ul class="dining-features">
+            <li><i class="fas fa-clock"></i> Lunch & Dinner</li>
+            <li><i class="fas fa-glass-cheers"></i> Full Bar</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dining-card">
+        <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80" alt="Poolside Bar">
+        <div class="dining-info">
+          <h3>Poolside Bar</h3>
+          <p>Refreshing drinks and light snacks</p>
+          <ul class="dining-features">
+            <li><i class="fas fa-clock"></i> 10:00 AM - 10:00 PM</li>
+            <li><i class="fas fa-cocktail"></i> Cocktails</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="facilities" class="section bg-light">
+    <div class="section-header">
+      <h2>Facilities</h2>
+      <p>A Colorful Experience Awaits!</p>
+    </div>
+    <div class="facilities-grid">
+      <div class="facility-card">
+        <i class="fas fa-swimming-pool"></i>
+        <h3>Swimming Pool</h3>
+        <p>Outdoor pool with poolside bar</p>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-dumbbell"></i>
+        <h3>Fitness Center</h3>
+        <p>24/7 access to modern equipment</p>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-spa"></i>
+        <h3>Spa & Wellness</h3>
+        <p>Massage, steam room, and sauna</p>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-concierge-bell"></i>
+        <h3>24/7 Front Desk</h3>
+        <p>Always here to assist you</p>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-parking"></i>
+        <h3>Free Parking</h3>
+        <p>Secure parking for guests</p>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-wifi"></i>
+        <h3>Free WiFi</h3>
+        <p>High-speed internet throughout</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="section">
+    <div class="section-header">
+      <h2>Events</h2>
+      <p>Moments Made Perfect</p>
+    </div>
+    <div class="events-grid">
+      <div class="event-card">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="Weddings">
+        <div class="event-info">
+          <h3>Weddings</h3>
+          <p>Create unforgettable memories</p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="Meetings">
+        <div class="event-info">
+          <h3>Meetings & Conferences</h3>
+          <p>State-of-the-art facilities</p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=800&q=80" alt="Celebrations">
+        <div class="event-info">
+          <h3>Celebrations</h3>
+          <p>Perfect for special occasions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="offers" class="section bg-light">
+    <div class="section-header">
+      <h2>Special Offers</h2>
+      <p>Get the Best Guaranteed Deals</p>
+    </div>
+    <div class="offers-grid">
+      <div class="offer-card">
+        <div class="offer-badge">Limited Time</div>
+        <h3>Early Bird Special</h3>
+        <p>Book 30 days in advance and save up to 20%</p>
+        <a href="#booking" class="btn btn-outline">Book Now</a>
+      </div>
+      <div class="offer-card">
+        <div class="offer-badge">Popular</div>
+        <h3>Weekend Getaway</h3>
+        <p>Stay 2 nights and get 1 night free</p>
+        <a href="#booking" class="btn btn-outline">Book Now</a>
+      </div>
+      <div class="offer-card">
+        <div class="offer-badge">New</div>
+        <h3>Long Stay Package</h3>
+        <p>Special rates for stays of 7 nights or more</p>
+        <a href="#booking" class="btn btn-outline">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="whats-new" class="section">
+    <div class="section-header">
+      <h2>What's New</h2>
+      <p>Get the Latest Updates First!</p>
+    </div>
+    <div class="news-grid">
+      <article class="news-card">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="Eco-Friendly Hotel">
+        <div class="news-content">
+          <h3>10 Eco-Friendly Reasons to Stay at Savoy Hotel Manila</h3>
+          <p>Discover our commitment to sustainable tourism</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="Muslim-Friendly Hotel">
+        <div class="news-content">
+          <h3>Muslim-Friendly Accommodation</h3>
+          <p>Recognized for our inclusive hospitality</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="nearby" class="section bg-light">
+    <div class="section-header">
+      <h2>Nearby Places</h2>
+      <p>Explore the Surrounding Area</p>
+    </div>
+    <div class="nearby-grid">
+      <div class="nearby-card">
+        <i class="fas fa-plane"></i>
+        <h3>NAIA Terminal 3</h3>
+        <p>350m away</p>
+      </div>
+      <div class="nearby-card">
+        <i class="fas fa-shopping-mall"></i>
+        <h3>Newport Mall</h3>
+        <p>5 minutes walk</p>
+      </div>
+      <div class="nearby-card">
+        <i class="fas fa-train"></i>
+        <h3>Newport Station</h3>
+        <p>5 minutes walk</p>
+      </div>
+      <div class="nearby-card">
+        <i class="fas fa-casino"></i>
+        <h3>Resorts World Manila</h3>
+        <p>10 minutes walk</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p>We're here to help with your stay</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-card">
+          <i class="fas fa-phone"></i>
+          <h3>Phone</h3>
+          <p>(833) 320-8176</p>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>reservations@savoyhotelmanila.com</p>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-clock"></i>
+          <h3>Check-in/Check-out</h3>
+          <p>Check-in: 3:00 PM<br>Check-out: 12:00 PM</p>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Address</h3>
+          <p>Andrews Avenue Newport City,<br>Pasay City, 1309, Philippines</p>
+        </div>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" name="phone" placeholder="Your Phone">
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Savoy Hotel Manila</h3>
+        <p>Experience luxury and comfort in the heart of Manila, just minutes away from NAIA Terminal 3.</p>
+        <div class="social-links">
+          <a href="https://facebook.com/savoyhotelmanila" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com/savoyhotelmanila" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/savoyhotelmanila" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#dining">Dining</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#whats-new">What's New</a></li>
+          <li><a href="#nearby">Nearby Places</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <ul class="contact-list">
+          <li><i class="fas fa-map-marker-alt"></i> Andrews Avenue Newport City, Pasay</li>
+          <li><i class="fas fa-phone"></i> (833) 320-8176</li>
+          <li><i class="fas fa-envelope"></i> reservations@savoyhotelmanila.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Savoy Hotel Manila. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

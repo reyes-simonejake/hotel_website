@@ -1,0 +1,177 @@
+/* carousel_fix.css */
+
+/* Overall layout for the About section */
+.about-container {
+  display: flex !important; /* Ensure flexbox is applied */
+  justify-content: center !important; /* Center content horizontally */
+  align-items: flex-start !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 3rem 2rem !important;
+  gap: 2rem !important;
+  flex-wrap: wrap !important; /* Allow items to wrap on smaller screens */
+}
+
+/* Image proportions */
+.about-image {
+  flex: 0 0 400px !important; /* Image takes a fixed width */
+  max-width: 400px !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.about-image img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* Text and features content wrapper */
+.about-text-and-carousel-wrapper {
+  flex: 1 1 auto !important; /* Take remaining space */
+  width: auto !important;
+  max-width: none !important; /* Remove max-width to allow full expansion */
+  margin: 0 !important; /* Remove margin to prevent conflicts */
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2rem !important;
+}
+
+/* About content text alignment (should be left, not centered) */
+.about-content {
+  text-align: left !important;
+  align-self: flex-start !important; /* Ensure text is left-aligned within wrapper */
+}
+
+/* Colored lines alignment (should be left, not centered) */
+.colored-lines {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  align-self: flex-start !important; /* Ensure colored lines are left-aligned within wrapper */
+}
+
+/* Feature icons grid container (4x4) */
+.about-features-carousel {
+  display: grid !important;
+  grid-template-columns: repeat(8, 1fr) !important; /* Forces 8 equal width columns */
+  grid-template-rows: repeat(2, 1fr) !important; /* Forces 2 equal height rows */
+  gap: 1.5rem !important;
+  height: auto !important;
+  max-width: 1368px !important; /* Explicitly set max-width for 8 columns + gaps */
+  margin: 0 auto !important; /* Center the grid horizontally */
+  justify-content: center !important; /* Center grid items (tracks) within the grid container */
+}
+
+.about-features-carousel::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Individual feature card styling */
+.feature-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 1rem !important;
+  border: 1px solid var(--gray-200) !important;
+  border-radius: 5px !important;
+  background: var(--white) !important;
+  box-shadow: var(--shadow-sm) !important;
+  box-sizing: border-box !important;
+  height: 100% !important; /* Fill the grid cell height now that rows are equal */
+  min-height: 120px !important; /* Ensure a consistent minimum height for all cards */
+  max-width: 150px !important; /* Limit individual card width to enable centering of the grid */
+  justify-self: center; /* Center individual cards within their grid cells */
+}
+
+.feature-card i {
+  font-size: 2.2rem !important;
+  color: var(--secondary-color) !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.feature-card p {
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  color: var(--secondary-color) !important;
+  line-height: 1.3 !important;
+  word-wrap: break-word !important;
+  white-space: normal !important;
+  display: block !important;
+}
+
+.carousel-pagination {
+  display: none !important;
+}
+
+/* Removed carousel pagination styles */
+
+/* Responsive adjustments for the grid */
+@media (max-width: 1200px) {
+  .about-features-carousel {
+    grid-template-columns: repeat(3, 1fr) !important; /* Adjust columns, allow centering */
+    grid-template-rows: repeat(2, 1fr) !important; /* Maintain 2 equal height rows */
+    max-width: 504px !important; /* Max-width for 3 columns + gaps (3*150 + 2*24 = 450 + 48 = 498, round to 504) */
+    margin: 0 auto !important;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column !important;
+    align-items: center !important; /* Re-added to ensure central alignment when in column */
+  }
+
+  .about-image,
+  .about-text-and-carousel-wrapper {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+
+  .about-features-carousel {
+    grid-template-columns: repeat(2, 1fr) !important; /* Fixed width for 2 columns */
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr)) !important; /* Allow more rows on smaller screens */
+    max-width: 324px !important; /* Max-width for 2 columns + gaps (2*150 + 1*24 = 300 + 24 = 324) */
+    margin: 0 auto !important;
+    justify-content: center !important;
+  }
+  .feature-card {
+    height: 100% !important; /* Ensure fill height */
+    max-width: 150px !important; /* Ensure card width consistency */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-features-carousel {
+    grid-template-columns: repeat(2, 1fr) !important; /* Fixed width for 2 columns */
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr)) !important; /* Allow more rows on smaller screens */
+    max-width: 324px !important; /* Max-width for 2 columns + gaps */
+    margin: 0 auto !important;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-features-carousel {
+    grid-template-columns: repeat(1, 1fr) !important; /* Fixed width for 1 column */
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr)) !important; /* Allow more rows on smallest screens */
+    max-width: 150px !important; /* Max-width for 1 column */
+    margin: 0 auto !important;
+    justify-content: center !important;
+  }
+  .feature-card {
+    padding: 0.8rem !important;
+    min-height: auto !important; /* Remove min-height */
+    height: 100% !important; /* Ensure fill height */
+  }
+  .feature-card i {
+    font-size: 1.8rem !important;
+  }
+  .feature-card p {
+    font-size: 0.7rem !important;
+  }
+} 
